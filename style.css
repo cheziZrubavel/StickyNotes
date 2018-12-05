@@ -1,0 +1,101 @@
+body {
+    background-image: url("../image/tile.jpg");
+}
+
+form {
+    width: 600px;
+    height: 220px;
+    padding: 20px;
+    margin: 0 auto;
+    top: 15%;
+    background-image: url("../image/formbg.jpg");
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#new-note-content {
+    width: 600px;
+    height: 200px;
+    top: 0%;
+    background: none;
+    border: none;
+    flex-grow: 2;
+}
+
+textarea::-webkit-input-placeholder {
+    font-size: 20px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 50px;
+    flex: none;
+}
+
+#addButton {
+    width: 250px;
+    height: 25px;
+    border: none;
+    background-color: forestgreen;
+    color: white;
+    padding: 0px;
+    cursor: pointer;
+    right: calc(50% - 250px);
+}
+
+#note-list {
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 20%;
+    padding: 20px;
+}
+.note-main {
+    padding: 30px;
+    height: 250px;
+    width: 180px;
+    background-image: url("../image/notebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background0.02sease;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    }
+     
+    .note-content {
+    padding: 10px;
+    flex-direction: column;
+    width: 180px;
+    overflow-x: hidden;
+    overflow-y: auto;
+     
+    }
+
+.note-date{
+    padding: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+.note-time{
+    padding: 10px;
+    text-align: left;
+    width: 180px;
+}
+
+.closeButton {
+    cursor: pointer;
+    text-align: right;
+    background: transparent;
+    border: none;
+    line-height: 0px;
+    text-decoration: none;
+    width: 180px;
+}
